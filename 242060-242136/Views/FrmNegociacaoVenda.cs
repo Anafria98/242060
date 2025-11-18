@@ -42,6 +42,13 @@ namespace _200038_20371.Views
             }
 
                 Close();
+
+            if (entrada > 0)
+            {
+                FrmCaixa frm = new FrmCaixa(txtIdVenda.Text, txtIdCliente.Text,
+                                            entrada, txtNome.Text);
+                frm.ShowDialog();
+            }
         }
 
         public FrmNegociacaoVenda(int idVenda, int idCliente, double total, string nome)

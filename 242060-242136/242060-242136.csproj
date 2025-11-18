@@ -105,6 +105,7 @@
     <Compile Include="fmrMenu.Designer.cs">
       <DependentUpon>fmrMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Caixa.cs" />
     <Compile Include="Models\Categoria.cs" />
     <Compile Include="Models\Cidades.cs" />
     <Compile Include="Models\Clientes.cs" />
@@ -115,6 +116,18 @@
     <Compile Include="Models\VendaDet.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\FrmContasaReceber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmContasaReceber.Designer.cs">
+      <DependentUpon>FrmContasaReceber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FrmCaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmCaixa.Designer.cs">
+      <DependentUpon>FrmCaixa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\frmCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +183,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Views\FrmContasaReceber.resx">
+      <DependentUpon>FrmContasaReceber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrmCaixa.resx">
+      <DependentUpon>FrmCaixa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\frmCategoria.resx">
       <DependentUpon>frmCategoria.cs</DependentUpon>
     </EmbeddedResource>
@@ -222,6 +241,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\7-pesquisar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PagtoDinheiro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PagtoCheque.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PagtoCartao.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PagtoPIX.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PagtoBoleto.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

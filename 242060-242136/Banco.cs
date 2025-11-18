@@ -115,6 +115,18 @@ namespace _200038_20371
                     "vlr_parcela double(10,2)," +
                     "status boolean)", Conexao);
                 Comando.ExecuteNonQuery();
+
+                Comando = new MySqlCommand("CREATE TABLE IF NOT EXISTS Caixa " +
+                            "(id integer auto_increment primary key," +
+                            " idVendaCab int," +
+                            " dinheiro decimal(10,2)," +
+                            " pix decimal(10,2)," +
+                            " cartao decimal(10,2)," +
+                            " cheque decimal(10,2)," +
+                            " boleto decimal(10,2))", Conexao);
+
+                Comando.ExecuteNonQuery();
+
                 FecharConexao();
             }
             catch (Exception e) {

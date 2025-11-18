@@ -58,5 +58,11 @@ namespace _200038_20371
             FrmVendas vendas = new FrmVendas();
             vendas.Show();
         }
+
+        private void contasAReceberToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmContasaReceber frm = new FrmContasaReceber();
+            frm.Show();
+        }
     }
 }
