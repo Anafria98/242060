@@ -121,7 +121,7 @@
             // btnConsultar
             // 
             this.btnConsultar.Image = global::_200038_20371.Properties.Resources._7_pesquisar;
-            this.btnConsultar.Location = new System.Drawing.Point(489, 16);
+            this.btnConsultar.Location = new System.Drawing.Point(511, 16);
             this.btnConsultar.Name = "btnConsultar";
             this.btnConsultar.Size = new System.Drawing.Size(83, 54);
             this.btnConsultar.TabIndex = 13;
